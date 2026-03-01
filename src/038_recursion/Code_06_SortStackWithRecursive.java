@@ -1,8 +1,8 @@
-package 038_recursion;
+package recursion_038;
 
-import java.util.stack;
+import java.util.Stack;
 
-public class SortStackWithRecursive {
+public class Code_06_SortStackWithRecursive {
     public static void sort(Stack<Integer> stack) {
         int deep = deep(stack);
         while (deep > 0) {
@@ -40,14 +40,14 @@ public class SortStackWithRecursive {
         }
         int num = stack.pop();
         int testTimes = times(stack, deep - 1, max);
-        int times = restTimes + (num == max ? 1 : 0);
+        int times = testTimes + (num == max ? 1 : 0);
         stack.push(num);
         return times;
     }
 
-    public static void down(Stack<Integer> stack, int deep, int deep, int max, int K) {
+    public static void down(Stack<Integer> stack, int deep, int max, int k) {
         if (deep == 0) {
-            for (int i = 0; i < k, i++) {
+            for (int i = 0; i < k; i++) {
                 stack.push(max);
             }
         } else {

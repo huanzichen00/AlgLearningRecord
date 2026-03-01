@@ -1,4 +1,4 @@
-package 038_recursion;
+package recursion_038;
 
 public class Code_07_TowerOfHanoi {
     public static void hanoi(int n) {
@@ -18,7 +18,7 @@ public class Code_07_TowerOfHanoi {
     }
 
     public static void main(String[] args) {
-        int n = 3;
+        int n = 9;
         hanoi(n);
     }
 }

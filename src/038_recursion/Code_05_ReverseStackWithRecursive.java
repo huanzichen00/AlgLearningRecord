@@ -1,7 +1,9 @@
-package 038_recursion;
+package recursion_038;
+
+import java.util.Stack;
 
 // 惊了
-public class ReverseStackWithRecursive {
+public class Code_05_ReverseStackWithRecursive {
     public static void reverse(Stack<Integer> stack) {
         if (stack.isEmpty()) {
             return;

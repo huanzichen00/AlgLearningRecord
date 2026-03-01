@@ -1,4 +1,4 @@
-package 038_recursion;
+package recursion_038;
 
 import java.util.*;
 
@@ -7,7 +7,7 @@ public class Code_02_Combinations {
     public static List<List<Integer>> subsetsWithDup(int[] nums) {
         List<List<Integer>> ans = new ArrayList<>();
         Arrays.sort(nums);
-        f(nums, 0, new int[num.length], 0, ans);
+        f(nums, 0, new int[nums.length], 0, ans);
         return ans;
     }
 
